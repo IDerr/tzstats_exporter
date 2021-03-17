@@ -2,10 +2,9 @@
 Description=Tzstats exporter
 
 [Service]
-ExecStart=/usr/bin/python /usr/local/lib/python_demo_service/python_demo_service.py
+ExecStart=/usr/bin/python3 /opt/tzstats_exporter/exporter.py
 Environment=hashes=mytzadress
 Restart=on-failure
-Type=notify
 
 [Install]
 WantedBy=default.target
