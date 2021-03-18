@@ -152,7 +152,7 @@ class TzstatsCollector(object):
         for key in explorer_metrics.keys():
             self.gauges[key] = GaugeMetricFamily('tzstats_' + key, explorer_metrics[key]["desc"], labels=explorer_metrics[key]["labels"])
         self.gauges["tzstats_next_endorsing"] = GaugeMetricFamily("tzstats_next_endorsing", explorer_metrics[key]["desc"], labels=explorer_metrics[key]["labels"])
-        self.gauges["tzstats_next_baking"] = GaugeMetricFamily("tzstats_next_endorsing", explorer_metrics[key]["desc"], labels=explorer_metrics[key]["labels"])
+        self.gauges["tzstats_next_baking"] = GaugeMetricFamily("tzstats_next_baking", explorer_metrics[key]["desc"], labels=explorer_metrics[key]["labels"])
 
 
     def collect(self):
