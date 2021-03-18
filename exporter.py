@@ -147,6 +147,13 @@ class TzstatsCollector(object):
         self.client = Pytzstats()
         self.hashes = hashes
         self.gauges = {}
+        
+
+    def collect(self):
+        cache_keys = metrics.keys()
+        cache_explorer_metrics = explorer_metrics.keys()
+
+        # Recreate each one to prevent multiple time same values (TODO: Seek a better solution)
         for key in metrics.keys():
             self.gauges[key] = GaugeMetricFamily('tzstats_' + key, metrics[key]["desc"], labels=metrics[key]["labels"].append("network"))
         for key in explorer_metrics.keys():
@@ -154,10 +161,7 @@ class TzstatsCollector(object):
         self.gauges["tzstats_next_endorsing"] = GaugeMetricFamily("tzstats_next_endorsing", explorer_metrics[key]["desc"], labels=explorer_metrics[key]["labels"])
         self.gauges["tzstats_next_baking"] = GaugeMetricFamily("tzstats_next_baking", explorer_metrics[key]["desc"], labels=explorer_metrics[key]["labels"])
 
-
-    def collect(self):
-        cache_keys = metrics.keys()
-        cache_explorer_metrics = explorer_metrics.keys()
+        # Get data
         explorer_data = self.client.get_explorer_tip()
         for thash in self.hashes:
             data = self.client.get_account(thash)
