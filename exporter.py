@@ -10,135 +10,135 @@ metrics = {
         "labels": ['hash']
     },
     "total_sent": { 
-		"desc": 'Lifetime total tokens sent in transactions.', 
-		"labels": ['hash']
-	},
+        "desc": 'Lifetime total tokens sent in transactions.', 
+        "labels": ['hash']
+    },
     "total_burned": { 
-		"desc": 'Lifetime total tokens burned in tz.', 
-		"labels": ['hash']
-	},
+        "desc": 'Lifetime total tokens burned in tz.', 
+        "labels": ['hash']
+    },
     "total_fees_paid": { 
-		"desc": 'Lifetime fees paid in tz.', 
-		"labels": ['hash']
-	},
+        "desc": 'Lifetime fees paid in tz.', 
+        "labels": ['hash']
+    },
     "total_rewards_earned": { 
-		"desc": 'Lifetime rewards earned in tz.', 
-		"labels": ['hash']
-	},
+        "desc": 'Lifetime rewards earned in tz.', 
+        "labels": ['hash']
+    },
     "total_fees_earned": { 
-		"desc": 'Lifetime fees earned in tz.', 
-		"labels": ['hash']
-	},
+        "desc": 'Lifetime fees earned in tz.', 
+        "labels": ['hash']
+    },
     "total_lost": { 
-		"desc": 'Lifetime fees earned in tz.', 
-		"labels": ['hash']
-	},
+        "desc": 'Lifetime fees earned in tz.', 
+        "labels": ['hash']
+    },
     "frozen_deposits": { 
-		"desc": "Currently frozen deposits", 
-		"labels": ['hash']
-	},
+        "desc": "Currently frozen deposits", 
+        "labels": ['hash']
+    },
     "frozen_rewards": { 
-		"desc": "Currently frozen rewards.", 
-		"labels": ['hash']
-	},
+        "desc": "Currently frozen rewards.", 
+        "labels": ['hash']
+    },
     "frozen_fees": { 
-		"desc": "Currently frozen fees.", 
-		"labels": ['hash']
-	},
+        "desc": "Currently frozen fees.", 
+        "labels": ['hash']
+    },
     "unclaimed_balance": { 
-		"desc": "Currently unclaimed balance (for vesting contracts and commitments).", 
-		"labels": ['hash']
-	},
+        "desc": "Currently unclaimed balance (for vesting contracts and commitments).", 
+        "labels": ['hash']
+    },
     "spendable_balance": { 
-		"desc": "Currently spendable balance.", 
-		"labels": ['hash']
-	},
+        "desc": "Currently spendable balance.", 
+        "labels": ['hash']
+    },
     "total_balance": { 
-		"desc": "Currently spendable and frozen balances (except frozen rewards).", 
-		"labels": ['hash']
-	},
+        "desc": "Currently spendable and frozen balances (except frozen rewards).", 
+        "labels": ['hash']
+    },
     "delegated_balance": { 
-		"desc": "Current incoming delegations.", 
-		"labels": ['hash']
-	},
+        "desc": "Current incoming delegations.", 
+        "labels": ['hash']
+    },
     "staking_balance": { 
-		"desc": "Current delegated and own total balance.", 
-		"labels": ['hash']
-	},
+        "desc": "Current delegated and own total balance.", 
+        "labels": ['hash']
+    },
     "total_delegations": { 
-		"desc": "Lifetime count of delegations.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime count of delegations.", 
+        "labels": ['hash']
+    },
     "active_delegations": { 
-		"desc": "Currently active and non-zero delegations.", 
-		"labels": ['hash']
-	},
+        "desc": "Currently active and non-zero delegations.", 
+        "labels": ['hash']
+    },
     "blocks_baked": { 
-		"desc": "Lifetime total blocks baked.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total blocks baked.", 
+        "labels": ['hash']
+    },
     "blocks_missed": { 
-		"desc": "Lifetime total block baking missed.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total block baking missed.", 
+        "labels": ['hash']
+    },
     "blocks_stolen": { 
-		"desc": "Lifetime total block baked at priority > 0.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total block baked at priority > 0.", 
+        "labels": ['hash']
+    },
     "blocks_endorsed": { 
-		"desc": "Lifetime total blocks endorsed.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total blocks endorsed.", 
+        "labels": ['hash']
+    },
     "slots_endorsed": { 
-		"desc": "Lifetime total endorsemnt slots endorsed.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total endorsemnt slots endorsed.", 
+        "labels": ['hash']
+    },
     "slots_missed": { 
-		"desc": "Lifetime total endorsemnt slots missed.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total endorsemnt slots missed.", 
+        "labels": ['hash']
+    },
     "n_ops": { 
-		"desc": "Lifetime total number of operations sent and received.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total number of operations sent and received.", 
+        "labels": ['hash']
+    },
     "n_ops_failed": { 
-		"desc": "Lifetime total number of operations sent that failed.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total number of operations sent that failed.", 
+        "labels": ['hash']
+    },
     "n_tx": { 
-		"desc": "Lifetime total number of transactions sent and received.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total number of transactions sent and received.", 
+        "labels": ['hash']
+    },
     "n_delegation": { 
-		"desc": "Lifetime total number of delegations sent.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total number of delegations sent.", 
+        "labels": ['hash']
+    },
     "n_origination": { 
-		"desc": "Lifetime total number of originations sent.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total number of originations sent.", 
+        "labels": ['hash']
+    },
     "n_proposal": { 
-		"desc": "Lifetime total number of proposals (operations) sent.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total number of proposals (operations) sent.", 
+        "labels": ['hash']
+    },
     "n_ballot": { 
-		"desc": "Lifetime total number of ballots sent.", 
-		"labels": ['hash']
-	},
+        "desc": "Lifetime total number of ballots sent.", 
+        "labels": ['hash']
+    },
 }
 
 explorer_metrics = {
     "cycle": { 
-		"desc": "Current cycle", 
-		"labels": ['network']
-	},
+        "desc": "Current cycle", 
+        "labels": ['network']
+    },
 }
 
 customs_metrics = {
     "next_endorsing": { 
-		"desc": "Next endorsing time (in minutes)", 
-		"labels": ['network']
-	},
+        "desc": "Next endorsing time (in minutes)", 
+        "labels": ['network']
+    },
 }
 
 class TzstatsCollector(object):
@@ -177,7 +177,7 @@ class TzstatsCollector(object):
                 yield self.gauges[key]
         
 if __name__ == '__main__':
-    hashes = os.getenv('hashes', ''.split(','))
+    hashes = os.getenv('HASHES', '').split(',')
     start_http_server(8000)
     REGISTRY.register(TzstatsCollector(hashes))
     while True:
